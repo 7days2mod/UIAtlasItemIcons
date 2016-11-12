@@ -96,7 +96,7 @@
   </window>
   <window name="windowCraftingList" width="397" height="688" controller="CraftingListInfo" panel="Left">
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-      <sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="Craft_Icon_Basics"/>
+      <sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" atlas="ItemIconAtlas" sprite="Craft_Icon_Basics"/>
       <label style="header.name" text="basics" text_key="xuiBasics"/>
       <label pos="387, -6" depth="2" name="unlockedCount" width="64" height="32" text="0/65" font_size="32" color="[lightGrey]" justify="right" pivot="topright"/>
       <sprite pos="328, -5" depth="2" name="unlockedIcon" style="icon32px" atlas="ItemIconAtlas" sprite="ui_game_symbol_book" color="[lightGrey]" pivot="topright"/>

@@ -193,6 +193,30 @@ v1.1.0 adds most of the additional icons available
 * ui_game_symbol_x
 * ui_game_symbol_zombie
 
+v1.2.0 adds new icons on A16
+* ui_game_symbol_bullet_point.png
+* ui_game_symbol_electric_generator.png
+* ui_game_symbol_electric_max_power.png
+* ui_game_symbol_electric_outlet.png
+* ui_game_symbol_electric_plugin.png
+* ui_game_symbol_electric_power.png
+* ui_game_symbol_electric_solar.png
+* ui_game_symbol_electric_switch.png
+* ui_game_symbol_electric_turret.png
+* ui_game_symbol_paint_allsides.png
+* ui_game_symbol_paint_brush.png
+* ui_game_symbol_paint_bucket.png
+* ui_game_symbol_paint_copy_block.png
+* ui_game_symbol_paint_eyedropper.png
+* ui_game_symbol_paint_roller.png
+* ui_game_symbol_paint_spraygun.png
+* ui_game_symbol_rotate_advanced.png
+* ui_game_symbol_rotate_auto.png
+* ui_game_symbol_rotate_on_face.png
+* ui_game_symbol_rotate_simple.png
+* ui_game_symbol_star.png
+* ui_game_symbol_talk.png
+
 
 To use these icons and also be able to use any icons from the ItemIcon atlas (and icons added the ItemIcons folder in a mod within the Mods folder) **atlas="ItemIconAtlas"** needs to be added in 3 places.
 

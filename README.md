@@ -3,6 +3,8 @@ UIAtlas icons converted to ItemIcons
 
 To use the icons add the UIAtlasItemIcons folder to your games Mods folder (or add the contents of the ItemIcons folder to your own mod's ItemIcons)
 
+
+## Icons available
 v1.0.0 contains the following icons (all the vanilla buff icons)
 * ui_game_symbol_beer
 * ui_game_symbol_brokenbone
@@ -218,7 +220,11 @@ v1.2.0 adds new icons on A16
 * ui_game_symbol_talk.png
 
 
-To use these icons and also be able to use any icons from the ItemIcon atlas (and icons added the ItemIcons folder in a mod within the Mods folder) **atlas="ItemIconAtlas"** needs to be added in 3 places.
+## Apply Manually
+To use these icons and also be able to use any icons from the ItemIcon atlas (and icons added the ItemIcons folder in a mod within the Mods folder) **atlas="ItemIconAtlas"** needs to be added.
+
+### Buff Icon
+You need to add **atlas="ItemIconAtlas"** in 3 places.
 
 If buffs.xml you can for example change icon="ui_game_symbol_drunk" to icon="beer" and it will use the icon for the beer item. Note that the icon will get squished flat a bit. If you want the aspect ratio to be correct, the icon should be 64x64 pixels at the shape you want, then resize the icon to 116x80 and save as a .png to your Mods/Modname/ItemIcons folder.
 

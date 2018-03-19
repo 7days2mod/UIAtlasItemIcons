@@ -359,10 +359,10 @@
 	</category_icon>
 	
 	<active_buff_entry>
-		<panel height="43" controller="ActiveBuffEntry" width="314" style="press" sound="[recipe_click]" on_hover="true" disableautobackground="true" on_scroll="true" >
-			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="320" height="49" color="[black]" type="sliced" fillcenter="false" />	
-			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-1,1" /> 
-			<sprite depth="2" name="Icon" sprite="{bufficon|once}" style="icon32px" pos="5,-5"/>
+		<panel height="43" controller="ActiveBuffEntry" width="314" style="press" sound="[recipe_click]" on_hover="true" disableautobackground="true" on_scroll="true">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="320" height="49" color="[black]" type="sliced" fillcenter="false"/>
+			<sprite depth="0" name="background" color="[darkGrey]" type="sliced" height="45" width="316" pos="-1,1"/>
+			<sprite depth="2" name="Icon" atlas="ItemIconAtlas" sprite="{bufficon|once}" style="icon32px" pos="5,-5"/>
 			<label depth="2" pos="45,-8" width="280" height="30" text="{buffname|once}  [DECEA3]{buffdisplayinfo}[-]" font_size="28" pivot="topleft"/>
 		</panel>
 	</active_buff_entry>

@@ -18,10 +18,10 @@
 			</rect>
 		</grid>
 
-		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
-			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" >
-				<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-				<sprite depth="4" name="Icon" size="36,32" pos="-58,0" pivot="center" color="[transparent]"/>
+		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft">
+			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
+				<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]"/>
+				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="-58,0" pivot="center" color="[transparent]"/>
 				<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="30" pivot="center"/>
 			</panel>
 		</rect>
@@ -798,8 +798,8 @@
 
 	<window name="buffInfoPanel" width="603" height="427" controller="BuffInfoWindow" anchor="CenterTop" panel="Center">
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{bufficon|once}"/>
-			<label style="header.name" text="{buffname|once}" />
+			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" atlas="ItemIconAtlas" sprite="{bufficon|once}"/>
+			<label style="header.name" text="{buffname|once}"/>
 		</panel>
 
 		<rect name="contentBuffInfo" height="381" depth="1" pos="0,-46">
@@ -808,7 +808,7 @@
 				<sprite depth="1" name="background" color="[black]" type="sliced" visible="false" sprite="menu_empty3px" fillcenter="false" />
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="153" height="153" color="[black]" type="sliced" fillcenter="false" />
 				<sprite depth="1" pos="2,-3" name="preview" width="150" height="148" color="[darkGrey]" type="sliced"/>
-				<sprite depth="3" name="itemPreview" width="100" height="100" sprite="{bufficon|once}" pos="27,-27" foregroundlayer="true"/>
+				<sprite depth="3" name="itemPreview" width="100" height="100" atlas="ItemIconAtlas" sprite="{bufficon|once}" pos="27,-27" foregroundlayer="true"/>
 
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,-150" width="153" height="231" color="[black]" type="sliced" fillcenter="false" />
 				<grid name="itemActions" rows="4" cols="1" pos="3,-153" width="148" height="100%" cell_width="147" cell_height="42" controller="ItemActionList" repeat_content="true">

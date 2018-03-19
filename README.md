@@ -297,4 +297,54 @@ Finally replace **active_buff_entry** with the following (in controls.xml):
 	</active_buff_entry>
 ```
 
+
+## Quest Icon
+
+You need to add **atlas="ItemIconAtlas"** in 3 places.
+
+How to edit quests.xml and notice for the icon format are same as buff icons.
+
+Replace the **windowQuestTracker** window with the following (in windows.xml):
+
+```
+	<window name="windowQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
+		<sprite pos="6,6" name="Background" sprite="ui_game_popup" height="43" width="240" />
+		<label depth="3" text="{questtitle}" font_size="26" justify="right" upper_case="true" pos="-100, -5" height="28" />
+		<sprite pos="210,0" name="windowIcon" style="icon32px" atlas="ItemIconAtlas" sprite="{questicon}" justify="right"/>
+
+		<sprite pos="6,-38" name="Background" sprite="ui_game_popup" height="{trackerheight}" width="240" />
+		<grid name="objectiveList" rows="8" cols="1" pos="-60,-44" cell_width="300" cell_height="26" repeat_content="true" arrangement="vertical" controller="QuestTrackerObjectiveList"
+			complete_icon="ui_game_symbol_check" incomplete_icon="ui_game_symbol_x" complete_color="[green]" incomplete_color="[red]" >
+			<quest_objective_tracker_entry />
+		</grid>
+	</window>
+```
+
+Replace the **windowQuestOffer** window with the following (in windows.xml):
+
+```
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header" >
+			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" atlas="ItemIconAtlas" sprite="{questicon}"/>
+			<label style="header.name" text="{questname}" width="500" />
+			<label depth="2" pos="545,-10" width="100" height="28" text="{questdifficulty}" color="[mediumGrey]" justify="right" upper_case="true" />
+
+			<!-- <button pos="550,-5" depth="2" name="closeButton" style="icon32px" sprite="ui_game_symbol_x" defaultcolor="[red]" /> -->
+		</panel>
+```
+
+Finally replace **quest_entry** with the following (in controls.xml):
+
+```
+	<quest_entry>
+		<rect width="450" height="43" controller="QuestEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" failed_color="255,0,0,255" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]" failed_icon="ui_game_symbol_x" >
+			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="450" height="49" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="1" name="background" pos="-1,1" height="45" width="446" color="{rowstatecolor}" sprite="{rowstatesprite}" type="sliced" />
+			<sprite depth="5" name="Icon" style="icon32px" pos="8,-3" foregroundlayer="true" atlas="ItemIconAtlas" sprite="{questicon}" color="{iconcolor}" />
+			<sprite depth="4" name="Tracking" sprite="ui_game_symbol_check" style="icon32px" pos="48,-3" foregroundlayer="true" visible="{istracking}"/>
+			<label depth="4" name="Name" pos="102,-8" width="330" height="30" text="{questname}" color="{textstatecolor}" />
+			<label depth="4" name="Distance" pos="340,-8" width="100" height="30" text="{distance}" justify="right" />
+		</rect>
+	</quest_entry>
+```
+
 Credit for the **atlas="ItemIconAtlas"** changes to Alphado-Jaki, DnaJur and n2n1.

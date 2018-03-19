@@ -347,4 +347,140 @@ Finally replace **quest_entry** with the following (in controls.xml):
 	</quest_entry>
 ```
 
+
+## Skill Icon
+You need to add **atlas="ItemIconAtlas"** in 3 places.
+
+Unlike other icons, name of the skill icon needs to start with ui_game_symbol_* and in progression.xml you need to assign the icon name as no prefix. For example, if you add ui_game_symbol_new_icon in Mods folder, needs to use icon="new_icon" for assignment.
+
+Replace the **windowSkillInfo** window with the following (in windows.xml):
+
+```
+	<window name="windowSkillInfo" width="603" height="470" panel="Right" controller="SkillInfoWindow" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_skills"/>
+			<label style="header.name" text="{groupname}" />
+
+			<label pos="594, -9" depth="2" width="300" height="28" text="{skillpointsavailable}" font_size="26" color="[lightGrey]" justify="right" pivot="topright"/>
+		</panel>
+		<rect name="content" pos="0,-46" height="424" depth="1">
+
+			<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" width="151" height="149" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="1" pos="2,-2" name="preview" width="148" height="148" color="[darkGrey]" type="sliced" />
+			<sprite depth="3" pos="77,-77" width="100" height="100" atlas="ItemIconAtlas" sprite="{groupicon}" pivot="center" foregroundlayer="true"/>
+
+			<panel depth="2" pos="3,-153" width="146" height="78" disableautobackground="true">
+				<sprite depth="1" pos="-3,8" width="151" height="91" name="background" color="[mediumGrey]" type="sliced"/>
+				<grid rows="2" cols="1" pos="0,5" width="144" cell_width="144" cell_height="43" controller="ItemActionList">
+					<skill_action_entry />
+					<!-- <skill_action_entry />  -->
+				</grid>
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,8" width="151" height="91" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="3" pos="75,-59" width="150" height="43" color="[mediumGrey]" pivot="center" type="sliced" />
+				<label depth="8" pos="75,-59" width="150" height="43" text="{buycost}" pivot="center" justify="center" />
+			</panel>
+			<rect depth="1" pos="148,0" width="454" height="234" >
+				<sprite depth="1" name="background" color="[mediumGrey]" type="sliced"/>
+				<sprite depth="6" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="455" height="236" color="[black]" type="sliced" fillcenter="false" />
+				<label depth="2" name="descriptionText" pos="6,-8" width="442" height="218" text="{groupdescription}"/>
+
+				<label depth="2" name="XpToNextLevel" pos="6,-205" width="200" height="30" text="XP TO NEXT LEVEL:" text_key="xuiXPToNextLevel" visible="{skillpercentshouldshow}"/>
+				<sprite depth="2" pos="159,-214" height="12" width="289" type="sliced" color="[black]" visible="{skillpercentshouldshow}" />
+				<sprite depth="3" pos="160,-215" height="10" width="287" color="[lightGrey]" foregroundlayer="true" visible="{skillpercentshouldshow}" type="sliced" />
+				<sprite depth="3" pos="160,-215" height="10" width="287" color="[red]" foregroundlayer="true" type="filled" fill="{skillpercentthislevel}" visible="{skillpercentshouldshow}" />
+			</rect>
+			<rect depth="1" pos="0,-234" width="600" height="197">
+				<sprite depth="1" name="background" color="[darkGrey]" type="sliced"/>
+				<sprite depth="3" pos="0,1" width="603" height="198" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
+				<rect name="tableHeader" pos="0,0" width="600" height="43">
+					<sprite depth="1" name="background" color="[lightGrey]" type="sliced"/>
+					<rect depth="1" width="303" height="40">
+						<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="300" height="46" color="[black]" type="sliced" fillcenter="false" />
+						<label name="lblAttributes" depth="1" pos="50,-10" upper_case="true" text="ATTRIBUTES" text_key="xuiAttributes"  width="300" height="34" />
+						<sprite depth="1" pos="10,-5" style="icon32px" sprite="ui_game_symbol_muscle" />
+					</rect>
+
+					<rect depth="1" pos="297,0" width="303" height="40">
+						<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="306" height="46" color="[black]" type="sliced" fillcenter="false" />
+
+						<!--#$-IGS BEGIN: Shrunked the label size and moved the icon and label to prevent text overflowing . -$#-->
+						<sprite depth="1" pos="10,-5" style="icon32px" sprite="ui_game_symbol_check"/>
+						<label depth="1" pos="50,-10" upper_case="true" text="REQUIREMENTS" text_key="xuiNextLevelRequirements" height="34" width="300" />
+						<!--#$-IGS END.-$#-->
+					</rect>
+				</rect>
+				<grid rows="5" cols="1" pos="6,-46" width="300" cell_width="147" cell_height="28" controller="SkillAttributeList">
+					<skill_attribute/>
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute />
+					<skill_attribute />
+				</grid>
+				<grid rows="4" cols="1" pos="300,-46" width="300" cell_width="147" cell_height="42" controller="SkillRequirementList">
+					<skill_requirement />
+					<skill_requirement />
+					<skill_requirement />
+					<skill_requirement />
+				</grid>
+			</rect>
+			<rect depth="3" width="600" height="43" pos="3,-432" controller="Paging">
+				<sprite depth="0" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="603" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite name="pagingControls" width="597" color="[mediumGrey]" type="sliced" />
+
+				<label depth="5" name="currentSkillLevel" pos="6, -8" width="250" height="30" text="{currentSkillLevel} {skillLevel}/{maxSkillLevel}" font_size="30" justify="left"/>
+
+				<label depth="5" name="skillLevel" pos="275, -8" width="200" height="30" text="Selected Level:" text_key="xuiSkillSelectedLevel" font_size="30" justify="right" visible="{showPaging}"/>
+
+				<panel pos="500,0" width="104" height="43" disableautobackground="true" visible="{showPaging}">
+					<button depth="4" name="pageDown" style="icon30px, press" pos="0,-22" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+					<rect depth="4" pos="27,-7">
+						<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+						<label depth="5" name="pageNumber" pos="0, -3" width="30" height="28" text="1" font_size="26" justify="center"/>
+					</rect>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="82,-22" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+				</panel>
+			</rect>
+		</rect>
+	</window>
+```
+
+Replace **skill_entry** with the following (in controls.xml):
+
+```
+	<skill_entry>
+		<panel disableautobackground="true" depth="2" width="645" height="46" controller="SkillEntry" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]">
+			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="647" height="48" color="[black]" type="sliced" fillcenter="false" />
+			
+			<sprite depth="1" color="{rowstatecolor}" sprite="{rowstatesprite}" width="644"  height="45" type="sliced" />
+			
+			<sprite depth="2" atlas="ItemIconAtlas" sprite="{groupicon}" style="icon32px" pos="6, -3" color="{statuscolor}" foregroundlayer="true"/>
+			
+			<sprite depth="3" pos="0,-39" height="3" width="640" color="[lightGrey]" foregroundlayer="true" visible="{skillpercentshouldshow}" type="sliced" />
+			<sprite depth="3" pos="0,-39" height="3" width="640" color="[red]" foregroundlayer="true" type="filled" fill="{skillpercentthislevel}" visible="{skillpercentshouldshow}" />
+			
+			<label width="386" pos="44,-7" depth="2" text="{groupname}" color="{statuscolor}"/>
+			
+			<sprite depth="2" pos="386,-19" sprite="ui_game_symbol_lock" visible="{islocked}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true"/>
+			<label width="125" pos="386,-19" depth="2" text="{grouplevel}" visible="{isnotlocked}" pivot="center" justify="center" color="{statuscolor}"/>
+			
+			<sprite pos="492,-19" depth="2" sprite="{grouptypeicon}" style="icon32px" pivot="center" color="{statuscolor}" foregroundlayer="true"/>
+			
+			<label width="90" pos="593,-19" depth="2" text="{grouppointcost}" upper_case="true" pivot="center" justify="center" color="{statuscolor}"/>
+		</panel>
+	</skill_entry>
+```
+
+Finally replace **skill_requirement** with the following (in controls.xml):
+
+```
+	<skill_requirement>
+		<rect controller="SkillRequirementEntry">
+			<sprite depth="2" style="icon30px" pos="5,-2" color="{requirementcolor}" atlas="ItemIconAtlas" sprite="{skillicon}" visible="{hasrequirement}" />
+			<label depth="1" pos="0,-4" text="{requirementtext}" upper_case="true" font_size="26" visible="{hasrequirement}" height="43" width="300" color="{requirementcolor}" justify="center" />
+		</rect>
+	</skill_requirement>
+```
+
+
 Credit for the **atlas="ItemIconAtlas"** changes to Alphado-Jaki, DnaJur and n2n1.

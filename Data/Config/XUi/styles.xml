@@ -28,12 +28,12 @@
 
     <style_entry name="white_quarter_alpha" 			value="255,255,255,192"/>
 
-    <style_entry name="iconColor" 						value="255,255,255" />
-    <style_entry name="labelColor" 						value="255,255,255" />
-    <style_entry name="selectedColor" 					value="222,206,163" />
-    <style_entry name="hoverColor"						value="250,255,163" />
+    <style_entry name="iconColor" 						value="255,255,255"/>
+    <style_entry name="labelColor" 						value="255,255,255"/>
+    <style_entry name="selectedColor" 					value="222,206,163"/>
+    <style_entry name="hoverColor"						value="250,255,163"/>
 
-    <style_entry name="disabledLabelColor"				value="160,160,160" />
+    <style_entry name="disabledLabelColor"				value="160,160,160"/>
 
     <!--NAMED SPRITES-->
     <style_entry name="default_sprite" value="menu_empty"/>
@@ -43,7 +43,7 @@
     <style_entry name="start" 				value="/UI/ui_menu_start"/>
     <style_entry name="back" 				value="/UI/ui_menu_back"/>
     <style_entry name="craft_click" 		value="/Crafting/craft_click_craft"/>
-    <style_entry name="paging_click"		value="/UI/ui_tab" />
+    <style_entry name="paging_click"		value="/UI/ui_tab"/>
     <style_entry name="recipe_click" 	value="/Crafting/craft_click_recipe"/>
     <style_entry name="pickup_click" 	value="/Crafting/craft_take_item"/>
     <style_entry name="place_click" 	value="/Crafting/craft_place_item"/>
@@ -59,7 +59,7 @@
     <style_entry name="effect" value="none"/>
     <style_entry name="pivot" value="topleft"/>
     <style_entry name="text" value=""/>
-    <style_entry name="upper_case" value="true" />
+    <style_entry name="upper_case" value="true"/>
   </style>
 
   <style type="label" name="protection">
@@ -91,28 +91,28 @@
     <style_entry name="color" value="[iconColor]"/>
     <style_entry name="width" value="48"/>
     <style_entry name="height" value="48"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <style type="sprite" name="icon32px">
     <style_entry name="color" value="[iconColor]"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <style type="sprite" name="icon30px">
     <style_entry name="color" value="[iconColor]"/>
     <style_entry name="width" value="30"/>
     <style_entry name="height" value="30"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <style type="sprite" name="icon22px">
     <style_entry name="color" value="[iconColor]"/>
     <style_entry name="width" value="22"/>
     <style_entry name="height" value="22"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <!--BUTTONS-->
@@ -120,27 +120,27 @@
     <style_entry name="atlas" value="UIAtlas"/>
     <style_entry name="sprite" value="[default_sprite]"/>
     <style_entry name="defaultcolor" value="[iconColor]"/>
-    <style_entry name="hovercolor" value="[hoverColor]" />
-    <style_entry name="selectedcolor" value="[selectedColor]" />
-    <style_entry name="hoverscale" value="1.25" />
+    <style_entry name="hovercolor" value="[hoverColor]"/>
+    <style_entry name="selectedcolor" value="[selectedColor]"/>
+    <style_entry name="hoverscale" value="1.25"/>
   </style>
 
   <style type="button" name="icon32px">
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <style type="button" name="icon30px">
     <style_entry name="width" value="30"/>
     <style_entry name="height" value="30"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <style type="button" name="icon22px">
     <style_entry name="width" value="22"/>
     <style_entry name="height" value="22"/>
-    <style_entry name="foregroundlayer" value="true" />
+    <style_entry name="foregroundlayer" value="true"/>
   </style>
 
   <!--ITEM STACKS-->
@@ -245,9 +245,9 @@
     <style_entry name="pos" value="-310,-9"/>
     <style_entry name="size" value="600,43"/>
     <style_entry name="anchor" value="CenterTop"/>
-    <style_entry name="normal_color" value="[iconColor]" />
-    <style_entry name="select_color" value="[selectedColor]" />
-    <style_entry name="hover_color" value="[lightGrey]" />
+    <style_entry name="normal_color" value="[iconColor]"/>
+    <style_entry name="select_color" value="[selectedColor]"/>
+    <style_entry name="hover_color" value="[lightGrey]"/>
   </style>
 
   <!--PAGING WINDOW TITLE-->
@@ -306,10 +306,10 @@
     <style_entry name="sprite" value="ui_game_symbol_hammer"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="CRAFTING" />
-    <style_entry name="tooltip_key" value="xuiCrafting" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="CRAFTING"/>
+    <style_entry name="tooltip_key" value="xuiCrafting"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.character" type="button">
@@ -320,10 +320,10 @@
     <style_entry name="sprite" value="ui_game_symbol_character"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="CHARACTER" />
-    <style_entry name="tooltip_key" value="xuiCharacter" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="CHARACTER"/>
+    <style_entry name="tooltip_key" value="xuiCharacter"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.map" type="button">
@@ -334,10 +334,10 @@
     <style_entry name="sprite" value="ui_game_symbol_map"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="MAP" />
-    <style_entry name="tooltip_key" value="xuiMap" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="MAP"/>
+    <style_entry name="tooltip_key" value="xuiMap"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.skills" type="button">
@@ -348,10 +348,10 @@
     <style_entry name="sprite" value="ui_game_symbol_skills"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="SKILLS" />
-    <style_entry name="tooltip_key" value="xuiSkills" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="SKILLS"/>
+    <style_entry name="tooltip_key" value="xuiSkills"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.quests" type="button">
@@ -362,10 +362,10 @@
     <style_entry name="sprite" value="ui_game_symbol_quest"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="QUESTS" />
-    <style_entry name="tooltip_key" value="xuiQuests" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="QUESTS"/>
+    <style_entry name="tooltip_key" value="xuiQuests"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.journal" type="button">
@@ -376,10 +376,10 @@
     <style_entry name="sprite" value="ui_game_symbol_pen"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="JOURNAL" />
-    <style_entry name="tooltip_key" value="xuiJournal" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="JOURNAL"/>
+    <style_entry name="tooltip_key" value="xuiJournal"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.players" type="button">
@@ -390,10 +390,10 @@
     <style_entry name="sprite" value="ui_game_symbol_players"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="PLAYERS" />
-    <style_entry name="tooltip_key" value="xuiPlayers" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="PLAYERS"/>
+    <style_entry name="tooltip_key" value="xuiPlayers"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="paging.window.icon.creative" type="button">
@@ -404,10 +404,10 @@
     <style_entry name="sprite" value="ui_game_symbol_lightbulb"/>
     <style_entry name="width" value="32"/>
     <style_entry name="height" value="32"/>
-    <style_entry name="tooltip" value="CREATIVE" />
-    <style_entry name="tooltip_key" value="xuiCreative" />
-    <style_entry name="hoverscale" value="1.25" />
-    <style_entry name="pivot" value="center" />
+    <style_entry name="tooltip" value="CREATIVE"/>
+    <style_entry name="tooltip_key" value="xuiCreative"/>
+    <style_entry name="hoverscale" value="1.25"/>
+    <style_entry name="pivot" value="center"/>
   </style>
 
   <style name="nonpaging.window" type="window">
@@ -505,18 +505,18 @@
     <style_entry name="type" value="sliced"/>
     <style_entry name="color" value="0,0,0,100"/>
     <style_entry name="pos" value="50,-3"/>
-    <style_entry name="width" value="300" />
-    <style_entry name="height" value="37" />
+    <style_entry name="width" value="300"/>
+    <style_entry name="height" value="37"/>
   </style>
 
   <style name="compass.window.compass.texture" type="texture">
     <style_entry name="depth" value="8"/>
-    <style_entry name="height" value="23" />
-    <style_entry name="width" value="300" />
-    <style_entry name="pos" value="50, -15" />
+    <style_entry name="height" value="23"/>
+    <style_entry name="width" value="300"/>
+    <style_entry name="pos" value="50, -15"/>
     <style_entry name="color" value="[iconColor]"/>
-    <style_entry name="tooltip" value="CHARACTER" />
-    <style_entry name="texture" value="Textures/UI/ui_game_compass" />
+    <style_entry name="tooltip" value="CHARACTER"/>
+    <style_entry name="texture" value="Textures/UI/ui_game_compass"/>
   </style>
 
   <style name="crafting.info.window" type="window">

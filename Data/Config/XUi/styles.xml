@@ -1,53 +1,46 @@
 <styles>
   <global>
-    <!-- 	
-			GLOBAL STYLE ENTRIES
-				Any entry in global is accessible by [name] example: value="[white]" 
-				These values are also accessible from window and control xml files 
-				as long as this style file is included in a window file.
-		-->
-
     <!--NAMED COLORS-->
-    <style_entry name="limeGreen" 		value="222,255,163,255"/>
-    <style_entry name="tan" 					value="182,166,123,255"/>
-    <style_entry name="beige" 				value="222,206,163"/>
-    <style_entry name="borderColor" 	value="0,0,0"/>
-    <style_entry name="darkGrey" 		value="64,64,64"/>
-    <style_entry name="mediumGrey" 	value="96,96,96"/>
-    <style_entry name="lightGrey" 		value="128,128,128"/>
-    <style_entry name="white" 				value="255,255,255"/>
-    <style_entry name="black" 				value="0,0,0"/>
-    <style_entry name="red" 					value="255,0,0"/>
-    <style_entry name="green" 					value="0,255,0"/>
-    <style_entry name="transparent" 	value="0,0,0,0"/>
+    <style_entry name="limeGreen" value="222,255,163,255"/>
+    <style_entry name="tan" value="182,166,123,255"/>
+    <style_entry name="beige" value="222,206,163"/>
+    <style_entry name="borderColor" value="0,0,0"/>
+    <style_entry name="darkGrey" value="64,64,64"/>
+    <style_entry name="mediumGrey" value="96,96,96"/>
+    <style_entry name="lightGrey" value="128,128,128"/>
+    <style_entry name="white" value="255,255,255"/>
+    <style_entry name="black" value="0,0,0"/>
+    <style_entry name="red" value="255,0,0"/>
+    <style_entry name="green" value="0,255,0"/>
+    <style_entry name="transparent" value="0,0,0,0"/>
 
-    <style_entry name="white_half_alpha" 				value="255,255,255,128"/>
-    <style_entry name="mediumGrey_half_alpha" 	value="96,96,96,128"/>
-    <style_entry name="darkGrey_half_alpha" 		value="64,64,64,128"/>
-    <style_entry name="black_half_alpha" 				value="0,0,0,128"/>
+    <style_entry name="white_half_alpha" value="255,255,255,128"/>
+    <style_entry name="mediumGrey_half_alpha" value="96,96,96,128"/>
+    <style_entry name="darkGrey_half_alpha" value="64,64,64,128"/>
+    <style_entry name="black_half_alpha" value="0,0,0,128"/>
 
-    <style_entry name="white_quarter_alpha" 			value="255,255,255,192"/>
+    <style_entry name="white_quarter_alpha" value="255,255,255,192"/>
 
-    <style_entry name="iconColor" 						value="255,255,255"/>
-    <style_entry name="labelColor" 						value="255,255,255"/>
-    <style_entry name="selectedColor" 					value="222,206,163"/>
-    <style_entry name="hoverColor"						value="250,255,163"/>
+    <style_entry name="iconColor" value="255,255,255"/>
+    <style_entry name="labelColor" value="255,255,255"/>
+    <style_entry name="selectedColor" value="222,206,163"/>
+    <style_entry name="hoverColor" value="250,255,163"/>
 
-    <style_entry name="disabledLabelColor"				value="160,160,160"/>
+    <style_entry name="disabledLabelColor" value="160,160,160"/>
 
     <!--NAMED SPRITES-->
     <style_entry name="default_sprite" value="menu_empty"/>
 
     <!--NAMED SOUNDS-->
-    <style_entry name="default_click" 	value="/UI/ui_menu_click"/>
-    <style_entry name="start" 				value="/UI/ui_menu_start"/>
-    <style_entry name="back" 				value="/UI/ui_menu_back"/>
-    <style_entry name="craft_click" 		value="/Crafting/craft_click_craft"/>
-    <style_entry name="paging_click"		value="/UI/ui_tab"/>
-    <style_entry name="recipe_click" 	value="/Crafting/craft_click_recipe"/>
-    <style_entry name="pickup_click" 	value="/Crafting/craft_take_item"/>
-    <style_entry name="place_click" 	value="/Crafting/craft_place_item"/>
-    <style_entry name="remove_waypoint" 	value="/UI/ui_waypoint_delete"/>
+    <style_entry name="default_click" value="/UI/ui_menu_click"/>
+    <style_entry name="start" value="/UI/ui_menu_start"/>
+    <style_entry name="back" value="/UI/ui_menu_back"/>
+    <style_entry name="craft_click" value="/Crafting/craft_click_craft"/>
+    <style_entry name="paging_click" value="/UI/ui_tab"/>
+    <style_entry name="recipe_click" value="/Crafting/craft_click_recipe"/>
+    <style_entry name="pickup_click" value="/Crafting/craft_take_item"/>
+    <style_entry name="place_click" value="/Crafting/craft_place_item"/>
+    <style_entry name="remove_waypoint" value="/UI/ui_waypoint_delete"/>
   </global>
 
   <!--LABELS-->
